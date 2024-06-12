@@ -2,12 +2,10 @@ Package: ggplotUtils
 Type: Package
 Title: Utility Functions for ggplot2
 Version: 0.1.0
-Authors@R: 
-    person("Gabriele", "Nasello", , , role = c("aut", "cre"),
-           comment = c(ORCID = "0000-0002-0255-6200"))
+Author: Gabriele Nasello
+Maintainer: Gabriele Nasello <gabriele.nasello@kuleuven.be>
 Description: A set of utility functions to enhance ggplot2.
-License: `use_mit_license()`
-Encoding: UTF-8
+License: MIT
 Roxygen: list(markdown = TRUE)
 RoxygenNote: 7.3.1
 Imports: ggplot2
