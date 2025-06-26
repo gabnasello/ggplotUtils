@@ -1,12 +1,25 @@
 Package: ggplotUtils
-Type: Package
-Title: Utility Functions for ggplot2
-Version: 0.1.0
-Author: Gabriele Nasello
-Maintainer: Gabriele Nasello <gabriele.nasello@kuleuven.be>
+Title: What the Package Does (One Line, Title Case)
+Version: 0.0.0.9000
+Authors@R: 
+    person("First", "Last", , "first.last@example.com", role = c("aut", "cre"),
+           comment = c(ORCID = "YOUR-ORCID-ID"))
+Description: What the package does (one paragraph).
+License: MIT + file LICENSE
 Encoding: UTF-8
-Description: A set of utility functions to enhance ggplot2.
-License: MIT
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.3.1
-Imports: ggplot2
+RoxygenNote: 7.3.2
+Imports: 
+    dplyr (>= 1.0.0),
+    ggplot2 (>= 3.0.0),
+    RColorBrewer,
+    stats,
+    viridisLite,
+    ggpubr,
+    rstatix
+Suggests: 
+    knitr,
+    rmarkdown,
+    testthat (>= 3.0.0)
+Config/testthat/edition: 3
+VignetteBuilder: knitr
