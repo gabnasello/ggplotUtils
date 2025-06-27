@@ -244,6 +244,7 @@ add_errorbars <- function(
 #' @param legend.size Numeric. Legend key size
 #' @param legend.size.unit Character. Unit for legend size (default: "in")
 #' @param scale_color_manual.values Named vector. Custom color values
+#' @param scale_fill_manual.values Named vector. Custom fill values
 #' @param filename Character. Base filename for saving (without extension)
 #' @param file_formats Character vector. File formats to save (default: c("png", "svg"))
 #' @param remove_grid Logical. Whether to remove grid lines (default: TRUE)
@@ -277,6 +278,7 @@ apply_minimal_theme <- function(
     legend.size = NULL,
     legend.size.unit = "in",
     scale_color_manual.values = NULL,
+    scale_fill_manual.values = NULL,
     filename = NULL,
     file_formats = c("png", "svg"),
     remove_grid = TRUE,
@@ -299,6 +301,11 @@ apply_minimal_theme <- function(
     # Apply color scale if provided
     if (!is.null(scale_color_manual.values)) {
         ggplt <- ggplt + ggplot2::scale_color_manual(values = scale_color_manual.values)
+    }
+    
+    # Apply fill scale if provided
+    if (!is.null(scale_fill_manual.values)) {
+        ggplt <- ggplt + ggplot2::scale_fill_manual(values = scale_fill_manual.values)
     }
     
     # Apply base theme and labels

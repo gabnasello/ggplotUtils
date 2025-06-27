@@ -52,4 +52,4 @@ rsconnect/
 *.Identifier
 
 # .ipynb_checkpoints
-*.ipynb_checkpoints
+**/.ipynb_checkpoints/
